@@ -28,35 +28,30 @@ end
 
     click_button 'Proceed to Checkout'
    
-    sleep 7
+    sleep 5
         
-    #fill_in 'street[0]', with: 'Rua Irutim'
-    #fill_in 'street[1]', with: '31'
-    #fill_in 'street[2]', with: 'Apto 256'
-    #fill_in 'city', with: 'São Paulo'
+    fill_in 'street[0]', with: 'Rua Irutim'
+    fill_in 'street[1]', with: '31'
+    fill_in 'street[2]', with: 'Apto 256'
+    fill_in 'city', with: 'São Paulo'
     
-    #find("WU3U008[value='12']").click
+    drop = find(".select[name='region_id']")
+    drop.find('option', text: 'California').select_option
+        
+    fill_in 'postcode', with: '12345-6789'
+    fill_in 'telephone', with: '51510102'
     
-    #within '#date' do
-    #  find("option[value='12']").click
-    #end
-    #select 'region_id', from: '12'
-    #find('.region_id', :text => 'California')
-   
-    
-    #fill_in 'postcode', with: '12345-6789'
-   # fill_in 'telephone', with: '51510102'
-    
-    choose 'ko_unique_1'
+    find('input[value=flatrate_flatrate]').click 
     click_button 'Next'
  end
  
  Quando('finalizo a compra') do
+  sleep 3
   click_button 'Place Order'
-end
+  end
 
 Então('meu pedido é gerado') do
   page.has_title? "Success Page"
- #"Thank you for your purchase!"
+  
 end
 

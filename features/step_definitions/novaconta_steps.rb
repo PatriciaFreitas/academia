@@ -14,7 +14,7 @@ Dado('que acesso o Luma') do
     fill_in 'firstname', with: 'Patricia'
     fill_in 'lastname', with: 'Souza'
     check 'Sign Up for Newsletter'
-    fill_in 'email_address', with: 'testepatriciadois@gmail.com'
+    fill_in 'email_address', with: 'teestepatricia@gmail.com'
     fill_in 'password', with: 'teste@1234'
     fill_in 'password_confirmation', with: 'teste@1234'
   end                                                                             
@@ -28,6 +28,6 @@ Dado('que acesso o Luma') do
   end                                                                             
                                                                                   
   Então('vejo as suas informações') do                                            
-    page.has_title? "My Account" 
+    page.has_title? "My Account"
   end                                                                             
 
