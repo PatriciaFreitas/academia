@@ -7,3 +7,4 @@ gem "cucumber", "3.1.2"
 gem "rspec", "3.8.0"
 gem "selenium-webdriver", "3.142.0"
 gem "pry"
+gem 'report_builder' 

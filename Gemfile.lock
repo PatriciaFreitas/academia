@@ -34,6 +34,7 @@ GEM
     cucumber-wire (0.0.1)
     diff-lcs (1.4.4)
     gherkin (5.1.0)
+    json (2.3.1)
     method_source (1.0.0)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
@@ -50,6 +51,8 @@ GEM
       rack (>= 1.0, < 3)
     rake (12.3.3)
     regexp_parser (1.8.0)
+    report_builder (1.9)
+      json (>= 2.3.0)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -77,6 +80,7 @@ DEPENDENCIES
   capybara (= 3.18.0)
   cucumber (= 3.1.2)
   pry
+  report_builder
   rspec (= 3.8.0)
   selenium-webdriver (= 3.142.0)
 
