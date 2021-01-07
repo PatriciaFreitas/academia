@@ -1,5 +1,12 @@
-default:  -p format-default -p report-html -p report-json
 
-format-default: --no-source --color --format pretty
-report-html:    --format html --out=data/report.html
-report-json:    --format json --out=data/report.json
+default:  --no-source --color --format pretty --format json --out=data/report/report.json
+
+qa_report: -p default chrome=true QA=true screenshot=true report=true
+
+
+
+#-p format-default -p report-html -p report-json
+#format-default: --no-source --color --format pretty
+#report-html:    --format html --out=data/report.html
+#report-json:    --format json --out=data/report.json
+

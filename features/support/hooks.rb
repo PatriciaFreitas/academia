@@ -1,6 +1,12 @@
 require 'report_builder'
 
 Before do
+    @login = Login.new
+    @busca = Busca.new
+    @carrinho = Carrinho.new
+    @pagamento = Pagamento.new
+    @pedido = Pedido.new
+
     Capybara.current_session.driver.browser.manage.delete_all_cookies
     window = Capybara.current_session.current_window
     window.resize_to(1200, 1200)

@@ -1,0 +1,26 @@
+login:
+  botao_logar:            "//a[@href='https://magento.nublue.co.uk/customer/account/login/referer/aHR0cHM6Ly9tYWdlbnRvLm51Ymx1ZS5jby51ay8%2C/']"
+  campo_email_login:      "//input[@id='email']"
+  campo_senha_login:      "//input[@id='pass']"
+  botao_entrar_login:     "//button[@class='action login primary']"
+
+busca:
+  campo_busca:            "//input[@id='search']"
+  botao_buscar:           "//input[@class=''"
+ 
+carrinho:  
+  botao_adicionar_carrinho:     "//button[@title='Add to Cart']"
+  icone_carrinho:               "//span[@class='action showcart']"
+  botao_prosseguir_checkout:    "//button[@title='Proceed to Checkout']"
+
+endereco:
+  campo_endereco: "//input[@id='street0']"
+  campo_numero: "//input[@id='street1']"
+  campo_bairro: "//input[@id='street2']"
+  campo_cidade:                   "//input[@id='city']"
+  option_estado:                  "//option[@value='508']"
+  campo_cep:                      "//input[@id='postcode']"
+  campo_telefone:                 "//input[@id='telephone']"
+  botao_enviar:                   "//button[@class='action continue primary']"
+
+finalizar_compra:
